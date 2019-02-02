@@ -1,0 +1,57 @@
+
+# Instructions: edit this file to provide your homework answers.
+#
+# Problem numbers are shown on lines that begin with #@.
+# Please put your solution to a problem on the line *after* the
+# line with the problem number.
+#
+# Do not modify this file *except* to add lines as needed after each problem.
+# Blank lines are ignored.  You don't need to put your name in the file.
+#
+# No points will be awarded to incorrectly-formatted files.
+#
+
+# Reading
+
+#@ 1a -- enter 'a', 'b', or 'c'  (don't use quotes in any answer)
+
+#@ 1b -- enter 'a', 'b', or 'c'
+
+#@ 1c -- enter 'a' or 'b'
+
+#@ 1d -- enter 'a' or 'b'
+
+#@ 1e -- enter 'a', 'b', or 'c'
+
+# Bash puzzle
+
+#@ 2a -- enter a single number
+
+#@ 2b -- enter 'Y' or 'N'  
+
+#@ 2c -- enter 'Y' or 'N'  
+
+#@ 2d -- enter 'Y' or 'N'  
+
+#@ 2e -- enter text on a single line
+
+#@ 2f -- enter 'Y' or 'N'  
+
+#@ 2g -- enter text on a single line
+
+#@ 2h -- enter 'Y' or 'N'  
+
+#@ 2i -- enter text on a single line
+
+#@ 2j -- enter 'Y' or 'N'  
+
+
+
+
+
+
+
+
+
+
+
