@@ -14,7 +14,7 @@
 # Reading
 
 #@ 1a -- enter 'a', 'b', or 'c'  (don't use quotes in any answer)
-
+a
 #@ 1b -- enter 'a', 'b', or 'c'
 
 #@ 1c -- enter 'a' or 'b'
@@ -26,25 +26,25 @@
 # Bash puzzle
 
 #@ 2a -- enter a single number
-
+1
 #@ 2b -- enter 'Y' or 'N'  
-
+N
 #@ 2c -- enter 'Y' or 'N'  
-
+Y
 #@ 2d -- enter 'Y' or 'N'  
-
+N
 #@ 2e -- enter text on a single line
-
+stuff
 #@ 2f -- enter 'Y' or 'N'  
-
+N
 #@ 2g -- enter text on a single line
-
+stuff
 #@ 2h -- enter 'Y' or 'N'  
-
+N
 #@ 2i -- enter text on a single line
-
+stuff
 #@ 2j -- enter 'Y' or 'N'  
-
+Y
 
 
 
