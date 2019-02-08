@@ -1,0 +1,59 @@
+Lab: How bash works
+
+Get access to a Linux machine (mlc104, your own machine, cloud9, etc.), and then answer the following questions.
+
+1. Is the ls command part of bash itself?
+	Yes
+
+2. What happens if you type ‘which ls’?
+	Gives me the path of ls (/bin/ls)
+
+3. Is the ‘cd’ command part of bash itself?  What happens if you type ‘which cd’?
+	Yes, cd is part of bash itself.
+	Gives me the path of cd (/usr/bin/cd)
+
+4. Try moving around on the command line:
+	a. at the command prompt, type ‘mar bash’, but don’t hit enter
+	b. go to the beginning of your command, using ctrl-a
+	c. go the end of the command, using ctrl-e
+	d. go back to the beginning, then move forward using ctrl-f
+	e. replace the ‘r’ in ‘mar’ with ‘n’, and hit enter
+
+5. If you create a new command ‘my_cmd’, can it be invoked through bash?
+	Yes
+
+6. Name a command-line interpreter you’ve used besides bash.
+
+7. Try command line completion:
+	a. at the command prompt, type ‘ls /usr/b’, but don’t hit enter
+	b. hit tab to complete the directory name, then hit enter
+	c. type ‘cd /usr/’, but don’t hit enter
+	d. hit tab -- what happens?
+		Nothing
+	e. type ‘l’, then hit tab -- what happens?
+		Nothing
+
+8. Is ‘bash’ itself a command?  Try running command ‘bash’ while using bash.  What happens?
+	Bash shell opens opens up.
+
+9. Run command ‘ps’.  What processes are shown?
+	PID TTY           TIME CMD
+  	561 ttys000    0:00.08 -bash
+
+10. Try using the command line history:
+	a. change to the root directory (which is just ‘/’)
+	b. type ‘cd’ and hit enter -- where are you now in the directory tree?
+		My home directory
+	c. type ctrl-p -- what do you see?
+		cd
+	d. type ctrl-p a few more times and notice what happens
+		shows my command history
+	e. now type ctrl-n and notice what happens
+		shows the next command in my command history
+	f. keep typing ctrl-n until nothing changes -- where are you in the command history now?
+		in the present of history (what I will type in now)
+	g. type ctrl-r, then type ls   (don’t hit enter)
+	h. now type ctrl-r a few more times -- what happens?
+		Give me a history of my commands containing ls
+
+11. If you still have time, create an account at codecademy.com, and start the course ‘learn the command line’.

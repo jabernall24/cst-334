@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6f036e7c-b130-4a97-89ab-d8f31f0e80bf" name="Operating Systems" url="http://mlc104.csumb.edu">
+        <fileTransfer host="mlc104.csumb.edu" port="22" rootFolder="/CLASSES/bern6032/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

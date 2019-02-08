@@ -1,0 +1,34 @@
+1. Log in to mlc104.
+
+2. From your home directory, do an 'ls' on my home directory (/home/CLASSES/brunsglenn)
+
+3. Repeat the previous step, but now redirect the output to file 'ls-out.txt'.
+
+4. Do you see any difference between what you got with 'ls' and the contents of 'ls-out.txt'?
+	The files are organized vertically rather than horizontally.
+
+5. How many files are in my home directory?   Use ls, wc, and pipes to get the number of files.
+	69
+
+6. Do an 'ls' on my home directory, pipe the result to sort to do a reverse sort on the file names, then direct the output to file ls-reverse.txt.
+
+7. Do an 'ls -l' on my home directory and redirect the output to ls-long.txt.  Take a look at the output.
+
+8. Do an 'ls -l' on my home directory again, but this time pipe the result to sort, and sort on the file size, and then redirect to ls-sorted.txt.
+	sort --k=5 --g
+
+9. Repeat the previous step, but now use pipes and another command to show the 5 biggest files only.
+
+10. How many users under /home/CLASSES?  (In other words, how many subdirectories under /home/CLASSES?)
+
+11. We haven't covered awk yet in class, but try this:
+$ ls -l | awk '{ print $2}'
+What is it doing?
+
+12. Using the idea of the previous problem, how many different months are found in the last modification date of files in my home directory?  (ls -l shows last modification date; you may also need uniq and sort)
+
+13. If you still have time, try problem 11 again, but this time using awk '{ print $5, $9 }'.
+
+14. If you still have time, try variations of problem 13.
+
+15. If you still have time, please read the bash man page.  Seriously, it's great to read it.

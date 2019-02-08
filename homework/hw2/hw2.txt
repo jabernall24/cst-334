@@ -14,15 +14,15 @@
 # Reading
 
 #@ 1a -- enter 'a', 'b', or 'c'  (don't use quotes in any answer)
-a
+b
 #@ 1b -- enter 'a', 'b', or 'c'
-
+c
 #@ 1c -- enter 'a' or 'b'
-
+b
 #@ 1d -- enter 'a' or 'b'
-
+b
 #@ 1e -- enter 'a', 'b', or 'c'
-
+c
 # Bash puzzle
 
 #@ 2a -- enter a single number

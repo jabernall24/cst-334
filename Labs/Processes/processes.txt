@@ -1,0 +1,29 @@
+1. The programs on the operating system and instructions that the OS needs to do, each program is a process.
+
+2. Everything that pertains to that process. Enough info to be able to restore it exactly how it was at a later time
+
+3. Multiple programs running at once.
+
+4. Dynamic data
+
+5. Yes. No, some of the processes are part of the OS.
+
+6. //none
+
+7. Shows what percentage of the cpu is being used by who/what. No process is using a lot of the cpu.
+
+8. //none
+
+9. //none
+
+10. //none
+
+11. I/O takes 4 times to complete. It runs the first I/O and as it is waiting to get something back it runs the second process. When the second process is over it continues to run the 1st process where it left off after receiving the I/O.
+
+12.It should use %100 because of the 100 after the :. 
+
+13.
+
+14.
+
+15.
