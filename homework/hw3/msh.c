@@ -51,8 +51,8 @@ int main() {
                             tokens = strtok(NULL, " \n");
                         }
 
-                        // executes the linux command, if it fails it prints out error message
-                        if(execvp(a[0], a) != 0){
+                        // executes the linux command, if it fails(returns) it prints out error message
+                        if(execvp(a[0], a)){
                             printf("msh: %s: %s\n", a[0], strerror(errno));
                             break;
                         }
