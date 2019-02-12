@@ -1,0 +1,13 @@
+1. 
+Saves where the instruction pointer is at
+Looks up at the interrupt table for the address of mouse click
+Tells the OS to run the code
+OS returns telling the code to continue where it left off
+
+2. Yes
+
+3. Trap
+
+4. Address to the process in the OS
+
+5. Yes
