@@ -1,1 +1,1 @@
-"." linguist-language = C
+*.py linguist-vendored
