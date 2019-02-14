@@ -14,9 +14,9 @@ a
 #@ 1b -- enter 'a', 'b', or 'c'
 b
 #@ 1c -- enter one or more letters, separated by commas
-a,c,d
+b,d
 #@ 1d -- enter 'a' or 'b'
-b
+a
 #@ 1e -- enter 'a', 'b', or 'c'
 b
 

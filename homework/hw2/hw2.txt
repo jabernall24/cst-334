@@ -28,7 +28,7 @@ c
 #@ 2a -- enter a single number
 1
 #@ 2b -- enter 'Y' or 'N'  
-N
+Y
 #@ 2c -- enter 'Y' or 'N'  
 Y
 #@ 2d -- enter 'Y' or 'N'  
@@ -36,7 +36,7 @@ N
 #@ 2e -- enter text on a single line
 stuff
 #@ 2f -- enter 'Y' or 'N'  
-N
+Y
 #@ 2g -- enter text on a single line
 stuff
 #@ 2h -- enter 'Y' or 'N'  
