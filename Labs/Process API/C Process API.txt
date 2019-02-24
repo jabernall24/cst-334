@@ -1,5 +1,0 @@
-1. fork
-
-2. Executes the command
-
-3. 
