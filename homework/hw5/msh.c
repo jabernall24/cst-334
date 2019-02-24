@@ -10,7 +10,6 @@
 #define MAXSTR 120
 
 void runCommand(char *string);
-void handleRedirectInput(char *string[MAXSTR], int length);
 
 int main(int argc, char **argv) {
     char s[MAXSTR + 3];
@@ -61,16 +60,24 @@ void runCommand(char *string){
 
                 char *tokens = strtok(string, " \n");
                 int i = 0;
+
+                // store file names if any redirection occurs
+                char *inFileName = "";
+                char *outFileName = "";
+
                 // takes each token and puts them in an array
                 while(tokens){
                     if(strcmp(tokens, ">") == 0){
+                        // TODO: handle output redirection
                         tokens = strtok(NULL, " \n");
-                        a[i] = strdup(tokens);
-                        handleRedirectInput(a, i);
-                        for(int j = 0; j <= i; j++) a[j] = NULL;
-                        i=0;
+                        outFileName = tokens;
+                        tokens = strtok(NULL, " \n");
+                        continue;
                     }else if(strcmp(tokens, "<") == 0){
-                        printf("redirection <"); break;
+                        // TODO: handle input redirection
+                        tokens = strtok(NULL, " \n");
+                        inFileName = tokens;
+                        tokens = strtok(NULL, " \n");
                     }else{
                         a[i] = strdup(tokens);
                         i++;
@@ -97,7 +104,26 @@ void runCommand(char *string){
                         exit(1);
                     }else if(rc == 0){
                         // executes the linux command, if it fails(returns) it prints out error message
-                        execvp(a[0], a);
+                        FILE *outFile = fopen(outFileName, "w");
+                        FILE *inFile = fopen(inFileName, "r");
+                        if(strcmp(outFileName, "") == 0 && strcmp(inFileName, "") == 0){
+                            // no input/output redirection
+                            execvp(a[0], a);
+                        }else if(strcmp(outFileName, "") != 0 && strcmp(inFileName, "") == 0){
+                            // output redirection
+                            dup2(fileno(outFile), 1);
+                            execvp(a[0], a);
+                        }else if(strcmp(inFileName, "") != 0 && strcmp(outFileName, "") == 0){
+                            // input redirection
+                            dup2(fileno(inFile), 0);
+                            execvp(a[0], a);
+                        }else{
+                            // input and output redirection
+                            dup2(fileno(inFile), 0);
+                            dup2(fileno(outFile), 1);
+                            execvp(a[0], a);
+                        }
+
                         printf("msh: %s: %s\n", a[0], strerror(errno));
                         exit(EXIT_SUCCESS);
                     }else{
@@ -106,12 +132,5 @@ void runCommand(char *string){
                 }
             }
         }
-    }
-}
-
-void handleRedirectInput(char *string[MAXSTR], int length){
-    printf("HI: %s", string[length]);
-    for(int i = 0; i < length; i++){
-        printf("%s", string[i]);
     }
 }
