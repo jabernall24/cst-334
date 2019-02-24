@@ -1,0 +1,6 @@
+SED
+1. 89 (grep residential all-roads-near-bl-small.osm | wc -l)
+
+2. 345 (grep way all-roads-near-bl-small.osm | wc -l)
+
+3.
