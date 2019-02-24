@@ -10,10 +10,12 @@
 #define MAXSTR 120
 
 void runCommand(char *string);
+void handleRedirectInput(char *string[MAXSTR], int length);
 
 int main(int argc, char **argv) {
     char s[MAXSTR + 3];
     bool readFromFile = false;
+
 
     while(!readFromFile){
         if(argc > 1){
@@ -61,9 +63,19 @@ void runCommand(char *string){
                 int i = 0;
                 // takes each token and puts them in an array
                 while(tokens){
-                    a[i] = strdup(tokens);
-                    i++;
-                    tokens = strtok(NULL, " \n");
+                    if(strcmp(tokens, ">") == 0){
+                        tokens = strtok(NULL, " \n");
+                        a[i] = strdup(tokens);
+                        handleRedirectInput(a, i);
+                        for(int j = 0; j <= i; j++) a[j] = NULL;
+                        i=0;
+                    }else if(strcmp(tokens, "<") == 0){
+                        printf("redirection <"); break;
+                    }else{
+                        a[i] = strdup(tokens);
+                        i++;
+                        tokens = strtok(NULL, " \n");
+                    }
                 }
 
                 // handles the cd command
@@ -94,5 +106,12 @@ void runCommand(char *string){
                 }
             }
         }
+    }
+}
+
+void handleRedirectInput(char *string[MAXSTR], int length){
+    printf("HI: %s", string[length]);
+    for(int i = 0; i < length; i++){
+        printf("%s", string[i]);
     }
 }
