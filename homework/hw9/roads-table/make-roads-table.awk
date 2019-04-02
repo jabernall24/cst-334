@@ -7,12 +7,14 @@ BEGIN {
 /<way/ {
     count = 0;
     id = substr($2, 5, length($2) - 5);
+
     getline;
     while($1 ~ "<nd") {
         node_id = substr($2, 6, length($2) - 8);
         some[++count] = node_id;
         getline;
     }
+
     name = "";
     while($1 ~ "<tag") {
         if($2 ~ "k=\"name\""){
