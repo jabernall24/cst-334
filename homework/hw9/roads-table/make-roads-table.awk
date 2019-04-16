@@ -2,7 +2,7 @@
 
 # YOUR CODE HERE
 BEGIN {
-    print "road,way_id,seq_num,node_id"
+    print "road,way_id,seq_num,node_id";
 }
 /<way/ {
     count = 0;
