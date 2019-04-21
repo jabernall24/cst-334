@@ -9,6 +9,9 @@
 }
 
 END {
-    for(n in words) { count++ }
+    for(n in words) { 
+        count++;
+    }
+
     print count;
 }

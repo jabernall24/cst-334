@@ -17,6 +17,7 @@ BEGIN {
                 line[$i] = i;
             }
         }
+        
         count++;
     }
 }

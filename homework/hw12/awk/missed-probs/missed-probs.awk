@@ -16,7 +16,6 @@ BEGIN {
             problem[substr($4, 13)]++;
         }
     }
-
 }
 
 END {
