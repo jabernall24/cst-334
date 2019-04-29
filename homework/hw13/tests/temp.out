@@ -1,0 +1,4 @@
+y = 3;
+z = y;
+x = abs(z);
+print(x);
